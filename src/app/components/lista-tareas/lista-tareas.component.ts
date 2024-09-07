@@ -5,17 +5,16 @@ import { Tarea } from '../../models/tarea.model';
 @Component({
   selector: 'app-lista-tareas',
   templateUrl: './lista-tareas.component.html',
-  styleUrls: ['./lista-tareas.component.css']
+  styleUrls: ['./lista-tareas.component.css'],
 })
 export class ListaTareasComponent {
   tareas: Tarea[] = [];
 
-  constructor(private tareasService: TareasService) {}
-
-  ngOnInit() {
-    this.tareas = this.tareasService.obtenerTareas(); // Asegúrate de que sea "obtenerTareas()"
+  constructor(private tareasService: TareasService) {
+    this.tareas = this.tareasService.obtenerTareas();
   }
 }
+
 
 
 

@@ -7,6 +7,7 @@ export class Tarea {
     this.id = id;
     this.nombre = nombre;
     this.completada = completada;
+    //hola123
   }
 }
 
