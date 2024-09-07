@@ -1,0 +1,27 @@
+<div [class.completada]="tarea.completada">
+  <!-- Modo vista normal -->
+  <ng-container *ngIf="!modoEdicion">
+    <span>{{ tarea.nombre }}</span>
+    <button (click)="toggleCompletada()">
+      {{ tarea.completada ? 'No Completada' : 'Completada' }}
+    </button>
+    <button (click)="editarTarea()">Editar</button>
+    <button (click)="eliminarTarea()">Eliminar</button>
+  </ng-container>
+
+  <!-- Modo edición -->
+  <ng-container *ngIf="modoEdicion">
+    <input [(ngModel)]="nombreEditado" placeholder="Editar tarea" />
+    <button (click)="guardarTarea()">Guardar</button>
+    <button (click)="cancelarEdicion()">Cancelar</button>
+  </ng-container>
+</div>
+
+
+
+
+
+
+
+
+

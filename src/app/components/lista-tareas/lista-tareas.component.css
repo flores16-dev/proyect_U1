@@ -1,0 +1,28 @@
+.tarea-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+
+.tarea-item.completada span {
+  text-decoration: line-through;
+}
+
+button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+

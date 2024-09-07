@@ -1,18 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { TareaFormComponent } from './components/tarea-form/tarea-form.component';
+import { ListaTareasComponent } from './components/lista-tareas/lista-tareas.component';
+import { TareaItemComponent } from './components/tarea-item/tarea-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TareaFormComponent,
+    ListaTareasComponent,
+    TareaItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
